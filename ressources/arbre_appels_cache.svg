@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Arbre d’appels de Fibonacci et cache</title>
+  <desc id="desc">Sans cache, fib deux et fib un apparaissent plusieurs fois dans l’arbre. Avec un cache, leurs résultats sont calculés une fois puis relus.</desc>
+  <rect width="900" height="420" fill="#f4f7fc"/>
+  <g font-family="DejaVu Sans,Arial,sans-serif" fill="#16324f">
+    <text x="32" y="40" font-size="24" font-weight="bold">Le cache replie les sous-arbres répétés</text>
+    <g stroke="#8096ad" stroke-width="2"><line x1="245" y1="92" x2="150" y2="155"/><line x1="245" y1="92" x2="340" y2="155"/><line x1="150" y1="195" x2="95" y2="257"/><line x1="150" y1="195" x2="205" y2="257"/><line x1="340" y1="195" x2="300" y2="257"/><line x1="95" y1="297" x2="65" y2="345"/><line x1="95" y1="297" x2="125" y2="345"/></g>
+    <g text-anchor="middle" font-size="16" font-weight="bold" stroke="#8096ad" stroke-width="2"><rect x="205" y="58" width="80" height="42" rx="21" fill="#dbe9ff"/><text x="245" y="85" stroke="none">fib(4)</text><rect x="110" y="155" width="80" height="42" rx="21" fill="#fff"/><text x="150" y="182" stroke="none">fib(3)</text><rect x="300" y="155" width="80" height="42" rx="21" fill="#ffd98e"/><text x="340" y="182" stroke="none">fib(2)</text><rect x="55" y="257" width="80" height="42" rx="21" fill="#ffd98e"/><text x="95" y="284" stroke="none">fib(2)</text><rect x="165" y="257" width="80" height="42" rx="21" fill="#f7c9d4"/><text x="205" y="284" stroke="none">fib(1)</text><rect x="260" y="257" width="80" height="42" rx="21" fill="#f7c9d4"/><text x="300" y="284" stroke="none">fib(1)</text><rect x="30" y="345" width="70" height="38" rx="19" fill="#f7c9d4"/><text x="65" y="370" stroke="none">fib(1)</text><rect x="100" y="345" width="70" height="38" rx="19" fill="#fff"/><text x="135" y="370" stroke="none">fib(0)</text></g>
+    <rect x="485" y="75" width="365" height="255" rx="14" fill="#fff" stroke="#8096ad" stroke-width="2"/><text x="510" y="110" font-size="20" font-weight="bold">Dictionnaire memo</text>
+    <g font-size="17"><rect x="510" y="137" width="315" height="44" rx="8" fill="#f7c9d4"/><text x="532" y="165">1 → 1</text><text x="690" y="165">calculé une fois</text><rect x="510" y="193" width="315" height="44" rx="8" fill="#ffd98e"/><text x="532" y="221">2 → 1</text><text x="690" y="221">puis relu</text><rect x="510" y="249" width="315" height="44" rx="8" fill="#bdebdc"/><text x="532" y="277">3 → 2</text><text x="690" y="277">réutilise 2 et 1</text></g>
+    <text x="32" y="403" font-size="16">Même argument = même sous-problème : mémoriser évite de reconstruire sa branche.</text>
+  </g>
+</svg>

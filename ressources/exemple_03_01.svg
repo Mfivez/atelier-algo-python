@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-labelledby="title desc">
+  <title id="title">Deux pointeurs sont deux indices Python</title>
+  <desc id="desc">La variable gauche contient zéro et désigne la première case, de valeur un. La variable droite contient quatre et désigne la dernière case, de valeur dix. Après avoir augmenté gauche, elle contient un et désigne la deuxième case, sans déplacer les valeurs de la liste.</desc>
+  <rect width="960" height="470" fill="#f4f7fc"/>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5479b8"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3b9278"/>
+    </marker>
+  </defs>
+
+  <g font-family="DejaVu Sans, Arial, sans-serif" fill="#16324f">
+    <text x="30" y="38" font-size="23" font-weight="bold">Les pointeurs contiennent des numéros de cases</text>
+    <text x="30" y="68" font-size="15">Ils indiquent où regarder ; ils ne déplacent pas les valeurs de la liste.</text>
+
+    <rect x="40" y="95" width="245" height="58" rx="12" fill="#dbe9ff" stroke="#5479b8" stroke-width="2"/>
+    <text x="162" y="121" font-size="17" font-weight="bold" text-anchor="middle">gauche = 0</text>
+    <text x="162" y="143" font-size="14" text-anchor="middle">le nombre stocké est un indice</text>
+
+    <rect x="675" y="95" width="245" height="58" rx="12" fill="#bdebdc" stroke="#3b9278" stroke-width="2"/>
+    <text x="797" y="121" font-size="17" font-weight="bold" text-anchor="middle">droite = 4</text>
+    <text x="797" y="143" font-size="14" text-anchor="middle">le nombre stocké est un indice</text>
+
+    <text x="165" y="193" font-size="14" text-anchor="middle">indice 0</text>
+    <text x="325" y="193" font-size="14" text-anchor="middle">indice 1</text>
+    <text x="485" y="193" font-size="14" text-anchor="middle">indice 2</text>
+    <text x="645" y="193" font-size="14" text-anchor="middle">indice 3</text>
+    <text x="805" y="193" font-size="14" text-anchor="middle">indice 4</text>
+
+    <rect x="105" y="207" width="120" height="76" rx="10" fill="#dbe9ff" stroke="#5479b8" stroke-width="3"/>
+    <rect x="265" y="207" width="120" height="76" rx="10" fill="#ffffff" stroke="#8096ad" stroke-width="2"/>
+    <rect x="425" y="207" width="120" height="76" rx="10" fill="#ffffff" stroke="#8096ad" stroke-width="2"/>
+    <rect x="585" y="207" width="120" height="76" rx="10" fill="#ffffff" stroke="#8096ad" stroke-width="2"/>
+    <rect x="745" y="207" width="120" height="76" rx="10" fill="#bdebdc" stroke="#3b9278" stroke-width="3"/>
+
+    <text x="165" y="255" font-size="28" font-weight="bold" text-anchor="middle">1</text>
+    <text x="325" y="255" font-size="28" font-weight="bold" text-anchor="middle">3</text>
+    <text x="485" y="255" font-size="28" font-weight="bold" text-anchor="middle">4</text>
+    <text x="645" y="255" font-size="28" font-weight="bold" text-anchor="middle">8</text>
+    <text x="805" y="255" font-size="28" font-weight="bold" text-anchor="middle">10</text>
+
+    <path d="M162 153 V195" fill="none" stroke="#5479b8" stroke-width="3" marker-end="url(#arrow-blue)"/>
+    <path d="M797 153 V195" fill="none" stroke="#3b9278" stroke-width="3" marker-end="url(#arrow-green)"/>
+
+    <path d="M105 307 V326 H865 V307" fill="none" stroke="#8096ad" stroke-width="2"/>
+    <text x="485" y="351" font-size="16" font-weight="bold" text-anchor="middle">zone encore examinée : indices 0 à 4</text>
+
+    <rect x="175" y="379" width="610" height="60" rx="12" fill="#fff7df" stroke="#c28a2c" stroke-width="2"/>
+    <text x="480" y="404" font-size="16" font-weight="bold" text-anchor="middle">Si gauche devient 1, la flèche vise la valeur 3.</text>
+    <text x="480" y="428" font-size="15" text-anchor="middle">La liste ne bouge pas : seule la position observée change.</text>
+  </g>
+</svg>

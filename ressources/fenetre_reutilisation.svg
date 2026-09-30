@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" role="img" aria-labelledby="title desc">
+  <title id="title">Recalculer une fenêtre ou réutiliser la somme</title>
+  <desc id="desc">Deux fenêtres de taille trois se chevauchent. La méthode naïve additionne trois valeurs à nouveau, la fenêtre glissante retire deux et ajoute un.</desc>
+  <rect width="900" height="390" fill="#f4f7fc"/><defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8096ad"/></marker></defs>
+  <g font-family="DejaVu Sans,Arial,sans-serif" fill="#16324f">
+    <text x="32" y="40" font-size="24" font-weight="bold">Deux fenêtres voisines partagent presque tout</text>
+    <g stroke="#8096ad" stroke-width="2"><rect x="70" y="75" width="70" height="48" rx="8" fill="#ffd98e"/><rect x="145" y="75" width="70" height="48" rx="8" fill="#bdebdc"/><rect x="220" y="75" width="70" height="48" rx="8" fill="#bdebdc"/><rect x="295" y="75" width="70" height="48" rx="8" fill="#dbe9ff"/><rect x="370" y="75" width="70" height="48" rx="8" fill="#fff"/></g>
+    <g font-size="19" text-anchor="middle"><text x="105" y="106">2</text><text x="180" y="106">1</text><text x="255" y="106">5</text><text x="330" y="106">1</text><text x="405" y="106">3</text></g>
+    <path d="M70 137 V154 H290 V137" fill="none" stroke="#6dbfa5" stroke-width="4"/><text x="180" y="179" text-anchor="middle" font-size="16">ancienne fenêtre : 2 + 1 + 5 = 8</text>
+    <path d="M145 196 V213 H365 V196" fill="none" stroke="#5479b8" stroke-width="4"/><text x="255" y="238" text-anchor="middle" font-size="16">nouvelle fenêtre : 1 + 5 + 1 = 7</text>
+    <rect x="505" y="72" width="345" height="92" rx="12" fill="#fff" stroke="#8096ad" stroke-width="2"/><text x="525" y="101" font-size="17" font-weight="bold">Naïf</text><text x="525" y="132" font-size="18">1 + 5 + 1 = 7</text><text x="525" y="153" font-size="14">trois lectures recommencées</text>
+    <rect x="505" y="190" width="345" height="115" rx="12" fill="#fff" stroke="#8096ad" stroke-width="2"/><text x="525" y="220" font-size="17" font-weight="bold">Fenêtre glissante</text><text x="525" y="253" font-size="20">8 − 2 + 1 = 7</text><text x="525" y="283" font-size="14"><tspan fill="#b36b00">retirer la sortie</tspan><tspan> ; </tspan><tspan fill="#315f9f">ajouter l’entrée</tspan></text>
+    <line x1="470" y1="245" x2="500" y2="245" stroke="#8096ad" stroke-width="3" marker-end="url(#a)"/>
+    <text x="32" y="361" font-size="16">Réutiliser l’état précédent remplace k additions par deux mises à jour.</text>
+  </g>
+</svg>

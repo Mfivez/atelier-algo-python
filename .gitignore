@@ -1,0 +1,10 @@
+# Documentation interne des ressources
+ressources/**/*.md
+
+# Scripts Python et fichiers compiles
+*.py
+*.py[cod]
+__pycache__/
+
+# Sauvegardes locales récupérables, jamais versionnées
+.recycle/
